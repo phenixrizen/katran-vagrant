@@ -7,7 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "hashicorp/bionic64"
   
   # Setup the shared mount
-  config.vm.synced_folder ".", "/vagrant", type: "smb"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
   # Disable updates
   config.vm.box_check_update = false
