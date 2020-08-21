@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install git -y
 
 # Git Katran
-git clone git@github.com:facebookincubator/katran.git
+git clone https://github.com/facebookincubator/katran.git
 
 # Install Katran Deps
 cd katran
