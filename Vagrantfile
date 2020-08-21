@@ -1,14 +1,14 @@
 # Ubuntu 18.04
 
-# Remove Shared Folders, we're not using them.
-Vagrant.actions[:start].delete(Vagrant::Action::VM::ShareFolders)
-
 # Vagrant version
 Vagrant.configure("2") do |config|
   
   # Base image (Ubuntu 18.04)
   config.vm.box = "hashicorp/bionic64"
   
+  # Setup the shared mount
+  config.vm.synced_folder ".", "/vagrant", type: "smb"
+
   # Disable updates
   config.vm.box_check_update = false
 
