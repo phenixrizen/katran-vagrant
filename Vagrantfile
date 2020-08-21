@@ -2,9 +2,15 @@
 
 # Vagrant version
 Vagrant.configure("2") do |config|
-  # Setup hardware
-  config.vm.cpus = 4
-  config.vm.memory = 4096
+  # Setup virtual hardware
+  config.vm.provider "hyperv" do |h|
+    h.cpus = 4
+    h.memory = 4096
+  end
+  config.vm.provider "virtualbox" do |vb|
+    vb.cpus = 2
+    vb.memory = 4096
+  end
 
   # Base image (Ubuntu 18.04)
   config.vm.box = "hashicorp/bionic64"
