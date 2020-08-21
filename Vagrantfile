@@ -4,7 +4,7 @@
 Vagrant.configure("2") do |config|
   
   # Base image (Ubuntu 18.04)
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "hashicorp/bionic64"
   
   # Disable updates
   config.vm.box_check_update = false
