@@ -1,5 +1,8 @@
 # Ubuntu 18.04
 
+# Remove Shared Folders, we're not using them.
+Vagrant.actions[:start].delete(Vagrant::Action::VM::ShareFolders)
+
 # Vagrant version
 Vagrant.configure("2") do |config|
   
