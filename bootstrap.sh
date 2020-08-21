@@ -14,5 +14,10 @@ cd katran
 # Build Katran
 ./build_katran.sh
 
+# Add VIPs
+
+# Listen on two addresses
+
+
 # Show message about successfully install
-echo "Everything done, have a nice day!"
+echo "Everything done, you can now play with the eample Katran server and client"
