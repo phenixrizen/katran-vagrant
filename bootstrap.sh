@@ -11,13 +11,11 @@ git clone https://github.com/facebookincubator/katran.git
 cd katran
 ./getdeps.sh 
 
+# Build bpf
+./build_bpf_modules_opensource.sh
+
 # Build Katran
 ./build_katran.sh
-
-# Add VIPs
-
-# Listen on two addresses
-
 
 # Show message about successfully install
 echo "Everything done, you can now play with the eample Katran server and client"
